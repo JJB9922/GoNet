@@ -148,4 +148,17 @@ func main() {
 
 	accuracy := float64(truePosNeg) / float64(numPredictions)
 	fmt.Printf("\nAccuracy %0.2f\n\n", accuracy*100)
+
+	// Print weights/biases for fun
+	fmt.Print("Final Weights & Biases:\n")
+	for i := 0; i < len(network.weightsOut.RawMatrix().Data); i++ {
+		fmt.Print("W: ", network.weightsOut.RawMatrix().Data[i])
+		fmt.Print("\n")
+	}
+	fmt.Print("\n")
+	for i := 0; i < len(network.biasesOut.RawMatrix().Data); i++ {
+		fmt.Print("B: ", network.biasesOut.RawMatrix().Data[i])
+		fmt.Print("\n")
+	}
+
 }

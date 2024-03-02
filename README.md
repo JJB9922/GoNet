@@ -7,6 +7,7 @@ It uses Fisher's Iris Flower dataset to classify flower type based on sepal and 
 
 Accuracy averages around 95%
 
+![Accuracy & W/B](image-1.png)
 
 See:
 
